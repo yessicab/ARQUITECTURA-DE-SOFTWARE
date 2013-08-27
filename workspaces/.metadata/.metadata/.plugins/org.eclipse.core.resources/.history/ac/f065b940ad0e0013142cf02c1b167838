@@ -1,0 +1,41 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+public class liquidacionNomina1 {
+	 public static void main (String[] args) throws Exception{
+		  int numeroEmpleados;
+		  Empleados[] losEmpleados= new Empleados [50];
+		  String cedula,apellido, nombre;
+		  double horas, sueldo;
+		  double total = 0;
+		  
+		  BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		  
+		  System.out. print("Digite numero de empleados:");
+		  numeroEmpleados = Integer.valueOf(br.readLine()). intValue();
+		  for(int i=0;i<numeroEmpleados;i++){
+			  System.out.print("\nDigite la cedula del empleado:");
+			  cedula = br. readLine();
+			  System.out.print("\nDigite la apellido del empleado:");
+			  apellido = br. readLine();
+			  System.out.print("\nDigite la nombre del empleado:");
+			  nombre = br. readLine();
+			  System.out.print("\nDigite numero del empleado:");
+			  horas=Double.valueOf(br.readLine()).doubleValue();
+			  System.out.print("\nDigite sueldo por horas del empleado:");
+			  sueldo=Double.valueOf(br.readLine()).doubleValue();
+			  
+			  Empleado unEmpleado = new Empleado();
+			  unEmpleados. cedula = cedula;
+			  unEmpleados. Apellido = apellido;
+			  unEmpleados. nombre = nombre ;
+			  unEmpleados. horasTrabajadas = horas;
+			  unEmpleados. sueldoXHoras = sueldo;
+			  
+			  losEmpleados[i] = unEmpleado();
+			  }
+		  for(int i=0<numeroEmpleados;i++)
+			  total = total + losEmpleados[i].sueldoXHoras *  losEmpleados [i].horasTrabajadas;
+				  System.out.println("\nLa nominatotal es: "+total);
+	 }
+
+}

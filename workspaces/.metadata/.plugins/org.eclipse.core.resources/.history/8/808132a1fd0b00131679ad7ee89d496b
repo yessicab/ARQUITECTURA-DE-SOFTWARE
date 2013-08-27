@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+
+public class entrada {
+	public static void main(String a[]){
+		Scanner X= new Scanner(System.in);
+		int r= X.nextInt();
+		int s= X.nextInt();
+		int t=r+s;
+		System.out.println("el valor digitado A es:"+r);
+		System.out.println("el valor digitado B es:"+s);
+		System.out.println("el valor digitado C es:"+t);
+		System.out.println("el resultado de la suma es:"+t);
+        r=s;
+        t=r;
+        s=t;
+       
+        
+       if(r>s)
+    	   System.out.println("el numero mayor es (r) y la potencia de (r,s)es:"+Math.pow(r,s)); 
+       
+     }
+
+   }
+
+

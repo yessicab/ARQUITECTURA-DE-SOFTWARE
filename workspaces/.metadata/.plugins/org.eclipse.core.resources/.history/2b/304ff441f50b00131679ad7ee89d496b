@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+
+public class entrada {
+	public static void main(String a[]){
+		Scanner X= new Scanner(System.in);
+		int r= X.nextInt();
+		int s= X.nextInt();
+		int t=r+s;
+		System.out.println("el valor digitado es:"+r);
+		System.out.println("el valor digitado es:"+s);
+		System.out.println("el resultado de la suma es:"+t);
+        r=s;
+        t=r;
+        t=s;
+        System.out.println(r+"el valor de s");
+        System.out.println(t+"el valor de r");
+        System.out.println(t+"el valor de s");
+
+     }
+
+   }
+
+
